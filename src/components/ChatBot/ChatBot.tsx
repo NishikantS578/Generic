@@ -5,7 +5,7 @@ interface ChatBotProps {}
 const ChatBot: React.FC<ChatBotProps> = () => {
   return (
     <div>
-      <h1>This is your chatbot working!</h1>
+      <h1>This is your chatbot working again!</h1>
     </div>
   );
 };
