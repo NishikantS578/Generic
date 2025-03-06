@@ -4,7 +4,7 @@
   "description": "An AI support chatbot for websites",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && babel src --out-dir dist --extensions \" .ts, .tsx\"",
+    "build": "tsc && babel src --out-dir dist --extensions \" .ts, .tsx\" --copy-files",
     "prepare": "npm run build"
   },
   "peerDependencies": {
@@ -16,6 +16,8 @@
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",
     "@types/react": "^19.0.10",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
     "typescript": "^5.8.2"
   },
   "dependencies": {
@@ -24,6 +26,7 @@
   "types": "dist/types/index.d.ts",
   "files": [
     "dist",
-    "types"
+    "types",
+    "src"
   ]
 }
